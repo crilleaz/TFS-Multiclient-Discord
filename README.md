@@ -14,8 +14,9 @@ git clone https://github.com/crilleaz/TFS-Multiclient-Discord
 2. Setup
 ```
 Move content of globalevents/scripts into your TFS1.*-server, replace existing ones
+Update globalevents.xml (see example in globalevents.xml)
 Import mc_check.sql into your database
-Edit database details in dc_offload_multiclients.php
+Edit database details and discord webhook in dc_offload_multiclients.php
 
 Add cronjob for the webhook:
 $sudo crontab -e
