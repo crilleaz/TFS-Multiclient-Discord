@@ -23,18 +23,13 @@ local function executeMulticlientCheck()
                 tmpPlayer = list[i]
                 message = ("%s, %s [%d]"):format(message, tmpPlayer:getName(), tmpPlayer:getLevel())
             end
-            -- print(message .. ".")
-            
-            -- save message to database
+
             local playerName = db.escapeString(tmpPlayer:getName())
             local timestamp = os.time()
             local formattedTimestamp = os.date('%Y-%m-%d %H:%M:%S', timestamp)
 
             db.query("INSERT INTO `mc_check` (`mc_message`, `mc_time`) VALUES (" ..
             db.escapeString(message) .. ", " .. db.escapeString(formattedTimestamp) .. ")")
-        
-        
-        
         end
     end
 end
