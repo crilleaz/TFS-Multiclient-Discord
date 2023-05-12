@@ -1,6 +1,4 @@
 <?php
-// crontab:
-//* * * * * php -e /var/www/html/dc_offload_chats.php
 
 // Set up database connection
 $db_host = "localhost";
