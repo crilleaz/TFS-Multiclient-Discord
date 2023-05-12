@@ -41,5 +41,4 @@ if (!empty($content)) {
 
 // Close database connection
 mysqli_close($conn);
-
 ?>
