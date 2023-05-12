@@ -39,6 +39,7 @@ if (!empty($content)) {
   echo "There are no new messages at the moment.";
 }
 
+
 // Close database connection
 mysqli_close($conn);
 ?>
